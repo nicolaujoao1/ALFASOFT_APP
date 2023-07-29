@@ -4,6 +4,7 @@ namespace ALFASOFT.Domain.Entities;
 
 public class Contact : Entity, IAggregateRoot
 {
+    public Contact(){ }
     public Contact(string name, string contactNumber, string emailAddress)
     {
         Name = name;

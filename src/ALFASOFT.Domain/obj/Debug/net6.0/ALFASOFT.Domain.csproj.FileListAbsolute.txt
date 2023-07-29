@@ -1,0 +1,12 @@
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\bin\Debug\net6.0\ALFASOFT.Domain.deps.json
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\bin\Debug\net6.0\ALFASOFT.Domain.dll
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\bin\Debug\net6.0\ALFASOFT.Domain.pdb
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\ALFASOFT.Domain.csproj.AssemblyReference.cache
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\ALFASOFT.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\ALFASOFT.Domain.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\ALFASOFT.Domain.AssemblyInfo.cs
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\ALFASOFT.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\ALFASOFT.Domain.dll
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\refint\ALFASOFT.Domain.dll
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\ALFASOFT.Domain.pdb
+C:\Users\HP\source\repos\ALFASOFT\src\ALFASOFT.Domain\obj\Debug\net6.0\ref\ALFASOFT.Domain.dll
