@@ -67,6 +67,20 @@ public class Validacoes
             throw new DomainException(mensagem);
         }
     }
+    public static void ValidarSeEmailValido(string email, string mensagem)
+    {
+        if (string.IsNullOrEmpty(email))
+        {
+            throw new DomainException(mensagem);
+        }
+        else
+        {
+            string pattern = @"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$";
+            var regex = new Regex(pattern);
+            if(!regex.IsMatch(email))
+                throw new DomainException(mensagem);
+        }
+    }
     public static void ValidarSeNulo(object object1, string mensagem)
     {
         if (object1 == null)

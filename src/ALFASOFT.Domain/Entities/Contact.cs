@@ -20,5 +20,6 @@ public class Contact : Entity, IAggregateRoot
     {
         Validacoes.ValidarTamanho(Name,5, "O Nome deve ter minimo 5 carateres!!");
         Validacoes.ValidarSeTamanhoNaoForIgualAoEsperado(ContactNumber, 9, "O seu contacto é invalido");
+        Validacoes.ValidarSeEmailValido(Name, "Email inválido");
     }
 }
