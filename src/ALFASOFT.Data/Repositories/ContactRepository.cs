@@ -1,11 +1,12 @@
 ﻿using ALFASOFT.Data.Data;
 using ALFASOFT.Domain.Entities;
+using ALFASOFT.Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
 namespace ALFASOFT.Data.Repositories
 {
-    public class ContactRepository
+    public class ContactRepository:IContactRepository
     {
         private readonly ApplicationDbContext _context;
 

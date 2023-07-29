@@ -6,4 +6,29 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+
+	<ItemGroup>
+		<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.20" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.20">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.20" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.20" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.20">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+	
+	
+	
+
+  <ItemGroup>
+    <ProjectReference Include="..\ALFASOFT.Application\ALFASOFT.Application.csproj" />
+    <ProjectReference Include="..\ALFASOFT.Data\ALFASOFT.Data.csproj" />
+    <ProjectReference Include="..\ALFASOFT.Domain\ALFASOFT.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
