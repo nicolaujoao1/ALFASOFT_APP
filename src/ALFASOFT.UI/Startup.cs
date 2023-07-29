@@ -20,7 +20,7 @@ namespace ALFASOFT.UI
             var serverVersion = new MariaDbServerVersion(new Version(10, 6, 0));
             services.AddDbContext<ApplicationDbContext>(options =>
             {
-                options.UseMySql(Configuration.GetConnectionString("DefaultConnection")
+                options.UseMySql(Configuration.GetConnectionString("MariaDB")
                ,serverVersion,b => b.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName));
             }
            );
