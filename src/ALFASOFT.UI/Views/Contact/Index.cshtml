@@ -1,0 +1,72 @@
+﻿@using ALFASOFT.Application.DTOs
+@model IEnumerable<ContactDTO>
+
+    @{
+    ViewData["Title"] = "Contacts";
+}
+
+<div style="margin-bottom:40px;">
+    <div class="row" style="position:relative;top:20px;">
+        <div class="col-md-12">
+            <div>
+                <div class="pull-left">
+                    <a asp-action="Create" class="btn btn-primary">
+                        <span class="fa fa-plus" style="padding:2px;">  New</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Email Address</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            int count = 1;
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@count</td>@{
+                    count++;
+                }
+                <td>@Html.DisplayFor(modelItem=>item.Name)</td>
+                <td>@Html.DisplayFor(modelItem=>item.ContactNumber)</td>
+                <td>@Html.DisplayFor(modelItem=>item.EmailAddress)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" title="Editar" class="btn btn-primary">
+                        <span class="fas fa-edit">Editar</span>
+                    </a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" title="Deletar" class="btn btn-danger">
+                        <span class="fas fa-trash-alt">Eliminar</span>
+                    </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
+
+@section scripts {
+    <script>
+        $(document).ready(function () {
+            $('#myTable').DataTable({
+                "pageLength": 10,
+                //language: {
+                //    url: '//cdn.datatables.net/plug-ins/1.13.5/i18n/pt-PT.json'
+                //}
+            });
+        });
+    </script>
+}
+

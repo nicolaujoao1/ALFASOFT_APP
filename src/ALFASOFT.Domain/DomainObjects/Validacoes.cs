@@ -43,6 +43,14 @@ public class Validacoes
             throw new DomainException(mensagem);
         }
     }
+    public static void ValidarTamanhoFixo(string valor, int maximo, string mensagem)
+    {
+        var length = valor.Trim().Length;
+        if (length < maximo)
+        {
+            throw new DomainException(mensagem);
+        }
+    }
 
     public static void ValidarTamanho(string valor, int minimo, int maximo, string mensagem)
     {
