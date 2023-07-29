@@ -8,5 +8,5 @@ public interface IContactService
     Task<ContactDTO> GetByIdAsync(Guid Id);
     Task<bool> CreateAsync(ContactDTO entity);
     Task<bool> UpdateAsync(ContactDTO entity);
-    Task<bool> DeleteAsync(ContactDTO entity);
+    Task<bool> DeleteAsync(Guid Id);
 }

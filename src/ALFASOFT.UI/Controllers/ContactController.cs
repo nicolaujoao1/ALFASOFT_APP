@@ -34,5 +34,33 @@ namespace ALFASOFT.UI.Controllers
                 return isCreated ? RedirectToAction(nameof(Index)) : View();
             }
         }
+        [HttpGet()]
+        public async Task<IActionResult> Delete(Guid Id)
+        {
+            var entity = await _contactService.GetByIdAsync(Id);
+            return entity is null ? NotFound() : View(entity);
+        }
+        [HttpPost(), ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(Guid Id)
+        {
+            await _contactService.DeleteAsync(Id);
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(Guid Id)
+        {
+            var entity = await _contactService.GetByIdAsync(Id);
+
+            return entity is null ? NotFound() : View(entity);
+        }
+        [HttpPost]
+        public async Task<IActionResult> Edit(ContactDTO contactDTO)
+        {
+
+            var isCreated = await _contactService.UpdateAsync(contactDTO);
+            return isCreated ? RedirectToAction(nameof(Index)) : View();
+
+        }
     }
 }

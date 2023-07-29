@@ -9,6 +9,6 @@ namespace ALFASOFT.Domain.Interfaces
         Task<Contact> GetByIdAsync(Guid Id);
         Task<bool> CreateAsync(Contact entity);
         Task<bool> UpdateAsync(Contact entity);
-        Task<bool> DeleteAsync(Contact entity);
+        Task<bool> DeleteAsync(Guid Id);
     }
 }

@@ -23,11 +23,10 @@ namespace ALFASOFT.Application.Services
             return await _contactService.CreateAsync(contact);
         }
 
-        public async Task<bool> DeleteAsync(ContactDTO entity)
+        public async Task<bool> DeleteAsync(Guid Id)
         {
-            var contact = _mapper.Map<Contact>(entity);
 
-            return await _contactService.CreateAsync(contact);
+            return await _contactService.DeleteAsync(Id);
         }
 
         public async Task<IEnumerable<ContactDTO>> GetAllAsync()

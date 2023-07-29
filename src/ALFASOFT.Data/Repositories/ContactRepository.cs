@@ -18,9 +18,9 @@ namespace ALFASOFT.Data.Repositories
             return await _context.SaveChangesAsync() > 0;
         }
 
-        public async Task<bool> DeleteAsync(Contact entity)
+        public async Task<bool> DeleteAsync(Guid Id)
         {
-            _context.Remove(entity);
+            _context.Contacts.Remove(_context.Contacts.First(c=>c.Id==Id));
             return await _context.SaveChangesAsync() > 0;
         }
 
