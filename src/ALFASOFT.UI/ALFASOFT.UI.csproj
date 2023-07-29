@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\ALFASOFT.Application\ALFASOFT.Application.csproj" />
     <ProjectReference Include="..\ALFASOFT.IoC\ALFASOFT.IoC.csproj" />
   </ItemGroup>
