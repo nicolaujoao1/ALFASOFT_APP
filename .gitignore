@@ -3,3 +3,7 @@
 ################################################################################
 
 /src/ALFASOFT.Application/obj
+/.vs/ALFASOFT/FileContentIndex
+/src/ALFASOFT.Data/obj
+/src/ALFASOFT.IoC/obj
+/src/ALFASOFT.UI/obj
