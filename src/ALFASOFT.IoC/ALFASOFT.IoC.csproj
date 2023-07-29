@@ -28,7 +28,6 @@
   <ItemGroup>
     <ProjectReference Include="..\ALFASOFT.Application\ALFASOFT.Application.csproj" />
     <ProjectReference Include="..\ALFASOFT.Data\ALFASOFT.Data.csproj" />
-    <ProjectReference Include="..\ALFASOFT.Domain\ALFASOFT.Domain.csproj" />
   </ItemGroup>
 
 </Project>

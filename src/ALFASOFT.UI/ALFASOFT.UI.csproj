@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ALFASOFT.Application\ALFASOFT.Application.csproj" />
+    <ProjectReference Include="..\ALFASOFT.IoC\ALFASOFT.IoC.csproj" />
+  </ItemGroup>
+
 </Project>
