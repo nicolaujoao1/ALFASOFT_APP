@@ -44,10 +44,13 @@
                 <td>@Html.DisplayFor(modelItem=>item.EmailAddress)</td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id" title="Editar" class="btn btn-primary">
-                        <span class="fas fa-edit">Editar</span>
+                        <span class="fas fa-edit">Edit</span>
+                    </a>
+                    <a asp-action="Preview" asp-route-id="@item.Id" title="Preview" class="btn btn-info">
+                        <span class="fas fa-edit">Preview</span>
                     </a>
                     <a asp-action="Delete" asp-route-id="@item.Id" title="Deletar" class="btn btn-danger">
-                        <span class="fas fa-trash-alt">Eliminar</span>
+                        <span class="fas fa-trash-alt">Delete</span>
                     </a>
                 </td>
             </tr>

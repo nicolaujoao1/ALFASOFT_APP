@@ -43,7 +43,7 @@ namespace ALFASOFT.Application.Services
         {
             var contact = _mapper.Map<Contact>(entity);
 
-            return await _contactService.CreateAsync(contact);
+            return await _contactService.UpdateAsync(contact);
         }
     }
 }
