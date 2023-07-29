@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1740585D-CB13-4CBA-A15E-61248621349C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{70A494A0-51C8-4870-BBE8-C28EC8AC144D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ALFASOFT.Domain", "src\ALFASOFT.Domain\ALFASOFT.Domain.csproj", "{6230FC30-70F9-4199-A8E3-5FA841E4C98C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6230FC30-70F9-4199-A8E3-5FA841E4C98C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6230FC30-70F9-4199-A8E3-5FA841E4C98C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6230FC30-70F9-4199-A8E3-5FA841E4C98C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6230FC30-70F9-4199-A8E3-5FA841E4C98C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6230FC30-70F9-4199-A8E3-5FA841E4C98C} = {1740585D-CB13-4CBA-A15E-61248621349C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7C83DCF1-6A21-4FEA-AB92-688C0188E47B}
+	EndGlobalSection
+EndGlobal
