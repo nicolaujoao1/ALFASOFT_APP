@@ -1,4 +1,4 @@
-﻿using LFASOFT.Domain.DomainObjects;
+﻿using ALFASOFT.Domain.DomainObjects;
 
 namespace ALFASOFT.Domain.Entities;
 

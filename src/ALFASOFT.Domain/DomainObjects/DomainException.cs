@@ -1,4 +1,4 @@
-﻿namespace LFASOFT.Domain.DomainObjects;
+﻿namespace ALFASOFT.Domain.DomainObjects;
 
 public class DomainException : Exception
 {
